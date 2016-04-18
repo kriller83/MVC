@@ -9,7 +9,7 @@ namespace MVCLabb1.Controllers
     public class SupermanController : Controller
     {
         // GET: Superman
-        public ActionResult Index()
+        public ActionResult DoGood()
         {
             return View();
         }
