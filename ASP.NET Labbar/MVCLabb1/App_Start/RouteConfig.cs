@@ -19,6 +19,7 @@ namespace MVCLabb1
                 {
                     controller = "Laser",
                     action = "Eye",
+
                     id = UrlParameter.Optional
                 }
         );

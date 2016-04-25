@@ -13,12 +13,22 @@ namespace MVCLabb1.Controllers
         {
             return View();
         }
-        public ActionResult Live()
+        public ActionResult Live(int? id)
         {
+            if (id != null)
+            {
+                ViewBag.Amount = id;
+            }
+            else
+            {
+                ViewBag.Amount = "";
+            }
             return View();
+
         }
         public ActionResult SuperMario()
         {
+           
             return View();
         }
     }
