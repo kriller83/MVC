@@ -1,0 +1,67 @@
+﻿@model Labb2_Uppgift2.Models.TicTacToe
+@{
+    ViewBag.Title = "TicTacToe";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device=width"/>
+    <title>TicTacToe</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet"/>
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet"/>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-push-4">
+            <form action="~/Game/TicTacToe" method="post">
+                @for (int i = 1, x = 1; i < 4; i++)
+                {
+                    <div class="row">
+                        @for (int j = 1; j < 4; j++, x++)
+                        {
+                            var value = "";
+                            var active = "";
+                            var box = Model.BoxList.FirstOrDefault(b => b.BoxCoordinate == x);  //deklarerar att vi använder oss av vår model. 
+                            if (box.BoxCoordinate > 0)
+                            {
+                                value = box.Value.ToString();
+                                active = "disabled";
+                            }
+                            <button type ="submit" name="button" class="col-md-4 btn btn-default" value="@x" @active>@value</button>
+                        }
+
+                    </div>
+                }
+
+
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
+
+
+<h2>TicTacToe</h2>
+
