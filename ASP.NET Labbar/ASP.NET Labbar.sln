@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCLabb1", "MVCLabb1\MVCLab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb2_Uppgift2", "Labb2_Uppgift2\Labb2_Uppgift2.csproj", "{BC237101-522F-42A0-AF61-8521178A8791}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LektionsovningCodeFirst", "LektionsovningCodeFirst\LektionsovningCodeFirst.csproj", "{5AF2F731-03C7-43E7-83BD-F7F9762058B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BC237101-522F-42A0-AF61-8521178A8791}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC237101-522F-42A0-AF61-8521178A8791}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC237101-522F-42A0-AF61-8521178A8791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF2F731-03C7-43E7-83BD-F7F9762058B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF2F731-03C7-43E7-83BD-F7F9762058B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF2F731-03C7-43E7-83BD-F7F9762058B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF2F731-03C7-43E7-83BD-F7F9762058B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
