@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCLabb1", "MVCLabb1\MVCLabb1.csproj", "{EACF9040-18CA-43D6-8E75-3D694128C8C2}"
 EndProject
@@ -12,6 +12,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb2_Uppgift1_21", "Labb2_Uppgift1_21\Labb2_Uppgift1_21.csproj", "{61E9BD9F-5954-4DEC-A99D-963C752025F1}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ContosoBooks_Labb3_Uppgift1", "ContosoBooks_Labb3_Uppgift1\ContosoBooks_Labb3_Uppgift1.xproj", "{EB3836EC-85EE-4AF5-BF29-32C2A645389D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_The_String_Calculator_Kata", "Exercise_The_String_Calculator_Kata\Exercise_The_String_Calculator_Kata.csproj", "{EC5491D3-E792-47AD-AE10-D4B6132B19E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_The_String_Calculator_KataTests", "Exercise_The_String_Calculator_KataTests\Exercise_The_String_Calculator_KataTests.csproj", "{48C072AB-D5E6-45D0-8AB8-05DC8BB12DC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD-Retro", "TDD-Retro\TDD-Retro.csproj", "{BF6961D2-3135-4EAA-90E4-09A7D8A3ECE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD-RetroTests", "TDD-RetroTests\TDD-RetroTests.csproj", "{7A054078-76B3-48AE-8811-6A249A3F4032}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +47,22 @@ Global
 		{EB3836EC-85EE-4AF5-BF29-32C2A645389D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB3836EC-85EE-4AF5-BF29-32C2A645389D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB3836EC-85EE-4AF5-BF29-32C2A645389D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC5491D3-E792-47AD-AE10-D4B6132B19E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5491D3-E792-47AD-AE10-D4B6132B19E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5491D3-E792-47AD-AE10-D4B6132B19E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5491D3-E792-47AD-AE10-D4B6132B19E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C072AB-D5E6-45D0-8AB8-05DC8BB12DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C072AB-D5E6-45D0-8AB8-05DC8BB12DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C072AB-D5E6-45D0-8AB8-05DC8BB12DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C072AB-D5E6-45D0-8AB8-05DC8BB12DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF6961D2-3135-4EAA-90E4-09A7D8A3ECE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF6961D2-3135-4EAA-90E4-09A7D8A3ECE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF6961D2-3135-4EAA-90E4-09A7D8A3ECE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF6961D2-3135-4EAA-90E4-09A7D8A3ECE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A054078-76B3-48AE-8811-6A249A3F4032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A054078-76B3-48AE-8811-6A249A3F4032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A054078-76B3-48AE-8811-6A249A3F4032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A054078-76B3-48AE-8811-6A249A3F4032}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
