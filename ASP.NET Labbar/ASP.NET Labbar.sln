@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD-Retro", "TDD-Retro\TDD-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD-RetroTests", "TDD-RetroTests\TDD-RetroTests.csproj", "{7A054078-76B3-48AE-8811-6A249A3F4032}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationExercise", "ValidationExercise\ValidationExercise.csproj", "{ED9E925E-828C-48FA-A0E9-611EB2EAC539}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{7A054078-76B3-48AE-8811-6A249A3F4032}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A054078-76B3-48AE-8811-6A249A3F4032}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A054078-76B3-48AE-8811-6A249A3F4032}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9E925E-828C-48FA-A0E9-611EB2EAC539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9E925E-828C-48FA-A0E9-611EB2EAC539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9E925E-828C-48FA-A0E9-611EB2EAC539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9E925E-828C-48FA-A0E9-611EB2EAC539}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
