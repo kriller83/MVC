@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7A054078-76B3-48AE-8811-6A249A3F4032}</ProjectGuid>
+    <ProjectGuid>{A2534F54-EE7C-4AD1-9671-9849B890FC5B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TDD_RetroTests</RootNamespace>
-    <AssemblyName>TDD-RetroTests</AssemblyName>
+    <RootNamespace>KioskTests</RootNamespace>
+    <AssemblyName>KioskTests</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -36,10 +36,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=3.0.5813.39031, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnitTDNet.3.0.1.0\lib\net45\nunit.framework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -55,19 +51,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AlternativeTests.cs" />
+    <Compile Include="KioskRater.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SekvensBoxarTests.cs" />
-    <Compile Include="SquareTests.cs" />
+    <Compile Include="RateResult.cs" />
+    <Compile Include="ReviewTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TDD-Retro\TDD-Retro.csproj">
-      <Project>{BF6961D2-3135-4EAA-90E4-09A7D8A3ECE3}</Project>
-      <Name>TDD-Retro</Name>
+    <ProjectReference Include="..\Kiosk\Kiosk.csproj">
+      <Project>{829CC2D6-E92A-47C7-9D90-B4442DFCDA68}</Project>
+      <Name>Kiosk</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
