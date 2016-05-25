@@ -1,0 +1,96 @@
+﻿@using System.Web.UI.HtmlControls
+@model AjaxWebbApplication.Models.Person
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Person</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<!--Här kan vi skriva vår ajax-->
+
+@*------------Part 1 Simple Ajax from Controller-----------------*@
+
+
+@Ajax.ActionLink(linkText:"If you click here I use Ajax to get information from the PersonController",
+    actionName:"HitMe",
+    ajaxOptions: new AjaxOptions
+    {
+        UpdateTargetId = "ajaxtarget",
+        InsertionMode = InsertionMode.InsertAfter
+    })
+<div id="ajaxtarget"></div>
+
+@*------------Part 2 Partial View-----------------*@
+
+@Ajax.ActionLink(
+    linkText:"Part 2 with a car",
+    actionName: "_Create",
+    controllerName: "Car",
+    routeValues: new {id = Model.ID},  //Skickar med värdet
+    ajaxOptions: new AjaxOptions
+    {
+        UpdateTargetId = "ajaxpartialtarget",
+        InsertionMode = InsertionMode.Replace
+    }
+)
+
+@*<div id="ajaxpartialtarget"></div>*@
+
+@*------------Part 3 Hide Partial View in a crappy way-----------------*@
+
+@Ajax.ActionLink(
+    linkText:"Hide stuff",
+    actionName: "_HideCreate",
+    controllerName: "Car",
+    ajaxOptions: new AjaxOptions
+    {
+        UpdateTargetId = "ajaxpartialtarget"
+    }
+    )
+
+<div id="ajaxpartialtarget"></div>
+
+
+@*------------Part 4 Partial View-----------------*@
+@*Återanvände part 1 men med nya actions*@
+
+
+@Ajax.ActionLink(
+    linkText: "Part 2 with a car",
+    actionName: "_Create2",
+    controllerName: "Car",
+    routeValues: new { id = Model.ID },  //Skickar med värdet
+    ajaxOptions: new AjaxOptions
+    {
+        UpdateTargetId = "ajaxpartialtarget",
+        InsertionMode = InsertionMode.Replace
+    }
+)

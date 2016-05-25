@@ -1,0 +1,57 @@
+﻿@model Labb4_uppg2.Models.Student
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SocialSecuretyNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SocialSecuretyNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StudentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<div>
+
+    @Ajax.ActionLink(linkText: "Show grades",
+        actionName: "ShowGrade",
+        ajaxOptions: new AjaxOptions
+        {
+            UpdateTargetId = "ajaxtarget",
+            InsertionMode = InsertionMode.InsertAfter
+        })
+</div>
+<div id="ajaxtarget"></div>

@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiosk", "Kiosk\Kiosk.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KioskTests", "KioskTests\KioskTests.csproj", "{A2534F54-EE7C-4AD1-9671-9849B890FC5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxWebbApplication", "AjaxWebbApplication\AjaxWebbApplication.csproj", "{EA38DB80-1CDF-43AB-BD34-6982CFDA92F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluralSightTest", "PluralSightTest\PluralSightTest.csproj", "{D049983B-FCA8-4526-A0DF-4F3CD324ABB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{A2534F54-EE7C-4AD1-9671-9849B890FC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2534F54-EE7C-4AD1-9671-9849B890FC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2534F54-EE7C-4AD1-9671-9849B890FC5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA38DB80-1CDF-43AB-BD34-6982CFDA92F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA38DB80-1CDF-43AB-BD34-6982CFDA92F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA38DB80-1CDF-43AB-BD34-6982CFDA92F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA38DB80-1CDF-43AB-BD34-6982CFDA92F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D049983B-FCA8-4526-A0DF-4F3CD324ABB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D049983B-FCA8-4526-A0DF-4F3CD324ABB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D049983B-FCA8-4526-A0DF-4F3CD324ABB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D049983B-FCA8-4526-A0DF-4F3CD324ABB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
