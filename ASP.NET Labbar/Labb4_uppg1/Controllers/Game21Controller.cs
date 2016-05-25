@@ -21,11 +21,6 @@ namespace Labb4_uppg1.Controllers
             return View();
         }
 
-        //public int AddValue(int buttonValue)
-        //{
-        //    Game.GetCurrentValue(buttonValue);
-        //    return Game.CurentValue;
-        //}
         public PartialViewResult AddValue(int buttonValue)
         {
             var game = Game21.GetCurrentValue(buttonValue);
