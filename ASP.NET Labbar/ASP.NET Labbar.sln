@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboration2_Uppgift1", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboration2_Uppgift2", "..\..\..\..\Desktop\MVC_new-master\MVC_new-master\Laboration2_Uppgift2\Laboration2_Uppgift2.csproj", "{C811A379-0E7E-4015-867D-1CC6FE47EF79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb4_uppg1", "Labb4_uppg1\Labb4_uppg1.csproj", "{811783E7-2AE6-4086-BFD5-F0BC262AC895}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{C811A379-0E7E-4015-867D-1CC6FE47EF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C811A379-0E7E-4015-867D-1CC6FE47EF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C811A379-0E7E-4015-867D-1CC6FE47EF79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{811783E7-2AE6-4086-BFD5-F0BC262AC895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811783E7-2AE6-4086-BFD5-F0BC262AC895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811783E7-2AE6-4086-BFD5-F0BC262AC895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811783E7-2AE6-4086-BFD5-F0BC262AC895}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

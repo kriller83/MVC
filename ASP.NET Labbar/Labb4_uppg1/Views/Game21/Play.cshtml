@@ -1,0 +1,36 @@
+﻿@using Labb4_uppg1.Models
+@model Labb4_uppg1.Models.Game21
+@{
+    ViewBag.Title = "Game";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Play</h2>
+
+<div id="gamevalue">
+    <p>@Game21.Message</p>
+    <p>@Game21.CurentValue</p>
+</div>
+@Ajax.ActionLink(
+    linkText: "1",
+    actionName: "AddValue",
+    routeValues: new { buttonValue = 1 },
+    ajaxOptions: new AjaxOptions()
+    {
+        UpdateTargetId = "gamevalue",
+        InsertionMode = InsertionMode.Replace
+
+    }
+    )
+@Ajax.ActionLink(
+    linkText: "2",
+    actionName: "AddValue",
+    routeValues: new { buttonValue = 2 },
+    ajaxOptions: new AjaxOptions()
+    {
+        UpdateTargetId = "gamevalue",
+        InsertionMode = InsertionMode.Replace
+
+    }
+    )
