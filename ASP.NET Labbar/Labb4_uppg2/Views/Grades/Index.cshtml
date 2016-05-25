@@ -1,5 +1,11 @@
 ﻿@model IEnumerable<Labb4_uppg2.Models.Grade>
 
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3>Grades</h3>
+
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -30,4 +36,7 @@
     </tr>
 }
 
+    @*<div>
+        @Html.Action("Create", "Grades");
+    </div>*@
 </table>

@@ -1,5 +1,12 @@
 ﻿@model Labb4_uppg2.Models.Student
 
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
 <div>
     <h4>Student</h4>
     <hr />
@@ -36,22 +43,14 @@
             @Html.DisplayFor(model => model.Address)
         </dd>
 
-
     </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.StudentId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
 
-<div>
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
 
-    @Ajax.ActionLink(linkText: "Show grades",
-        actionName: "ShowGrade",
-        ajaxOptions: new AjaxOptions
-        {
-            UpdateTargetId = "ajaxtarget",
-            InsertionMode = InsertionMode.InsertAfter
-        })
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
 </div>
-<div id="ajaxtarget"></div>

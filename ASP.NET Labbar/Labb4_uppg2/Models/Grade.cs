@@ -13,5 +13,7 @@ namespace Labb4_uppg2.Models
         public string CourseName { get; set; }
         [DisplayName("Betyg")]
         public string CourseGrade { get; set; }
+        public int StudentId { get; set; }              
+
     }
 }

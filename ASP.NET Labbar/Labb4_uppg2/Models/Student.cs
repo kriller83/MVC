@@ -18,7 +18,7 @@ namespace Labb4_uppg2.Models
             [DisplayName("Adress")]
             public string Address { get; set; }
             [DisplayName("Betyg")]
-            public List<Grade> Grades { get; set; } = new List<Grade>();
+            public List<Grade> Grades { get; set; } 
         
     }
 }

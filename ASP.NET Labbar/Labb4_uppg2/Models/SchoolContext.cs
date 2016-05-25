@@ -1,16 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using System.Web.Mvc;
-using Labb4_uppg2.Models;
 
-namespace Labb4_uppg2.Controllers
+namespace Labb4_uppg2.Models
 {
-    public class StudentController : Controller
+    public class SchoolContext : DbContext
     {
-        // GET: Student
-        public ActionResult Details()
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Grade> Grades { get; set; }
+        public SchoolContext() : base ("SchoolDb")
+        {
+            Database.SetInitializer<SchoolContext>(new ScoolContextInitializer());
+        }
+    }
+
+    internal class ScoolContextInitializer : DropCreateDatabaseAlways<SchoolContext>
+    {
+        protected override void Seed(SchoolContext context)
         {
             var student = new Student()
             {
@@ -19,21 +27,21 @@ namespace Labb4_uppg2.Controllers
                 FirstName = "Kristian",
                 LastName = "Ragnvaldsson",
                 SocialSecuretyNumber = "830610",
-                Grades = new List<Grade>()
+                Grades = new List<Grade>
                 {
-                    new Grade()
+                    new Grade
                     {
                         GradeId = 1,
                         CourseName = "ASP.NET MVC",
                         CourseGrade = "G"
                     },
-                    new Grade()
+                    new Grade
                     {
                         GradeId = 2,
                         CourseName = "SharePoint",
                         CourseGrade = "VG"
                     },
-                    new Grade()
+                    new Grade
                     {
                         GradeId = 3,
                         CourseName = "Entity Framework",
@@ -41,14 +49,8 @@ namespace Labb4_uppg2.Controllers
                     }
                 }
             };
-            Session["Student"] = student;
-            return View(student);
-        }
-
-        public ActionResult ShowGrade()
-        {
-            var student = (Student) Session["Student"];
-            return View(student.Grades);
+            context.Students.Add(student);
+            context.SaveChanges();
         }
     }
 }
